@@ -13,7 +13,7 @@ jobs:
           git config --global user.name "shimajima-eiji"
       - name: Commit files
         run: |
-          date >dummy
+          TZ=-9 date '+%Y/%m/%d (JST)' >dummy
           git add .
           git commit -m "Update dummy by Github Actions" -a
           git pull
