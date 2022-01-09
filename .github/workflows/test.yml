@@ -6,15 +6,13 @@ jobs:
   run-shell-command:
     runs-on: ubuntu-latest
     steps:
-      - name: clone this
-        run: git clone https://github.com/shimajima-eiji/__Githut-Action_demo.git
+      - uses: actions/checkout@v2  # git clone this
       - name: git setting
         run: |
           git config --global user.email "${{ secrets.EMAIL }}"
           git config --global user.name "shimajima-eiji"
       - name: Commit files
         run: |
-          cd __Github-Action_demo
           echo "test" >dummy
           git commit -m "Add dummy" -a
           git pull
