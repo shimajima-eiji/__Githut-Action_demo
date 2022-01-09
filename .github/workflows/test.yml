@@ -12,8 +12,8 @@ jobs:
         run: echo "test" >dummy
       - name: git setting
         run: |
-          git config --local user.email "${{ secrets.EMAIL }}"
-          git config --local user.name "shimajima-eiji"
+          git config user.email "${{ secrets.EMAIL }}"
+          git config user.name "shimajima-eiji"
       - name: Commit files
         run: |
           git commit -m "Add dummy" -a
