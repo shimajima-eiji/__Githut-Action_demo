@@ -8,5 +8,7 @@ jobs:
     steps:
       - name: check current
         run: pwd
+      - name: clone this
+        run: git clone https://github.com/shimajima-eiji/__Githut-Action_demo.git
       - name: check files
         run: ls -laR
