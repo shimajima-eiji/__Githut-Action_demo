@@ -12,7 +12,7 @@ https://github.com/shimajima-eiji/__Githut-Action_demo/blob/main/.github/workflo
 
 ### （任意）変数を非公開にしたい
 https://github.com/(USER)/(REPOSITORY)/settings/secrets/actions で追加する。  
-ここでは、EMAILという名前で何らかの値を入れていることが分かる。
+ここでは、`USER`と`EMAIL`に何らかの値を入れていることが分かる。
 
 ### やらかし例
 ```
