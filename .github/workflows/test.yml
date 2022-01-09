@@ -6,9 +6,16 @@ jobs:
   run-shell-command:
     runs-on: ubuntu-latest
     steps:
-      - name: check current
-        run: pwd
       - name: clone this
         run: git clone https://github.com/shimajima-eiji/__Githut-Action_demo.git
-      - name: check files
-        run: ls -laR
+      - name: debug
+        run: echo "test" >dummy
+      - name: git setting
+        run: |
+          git config --local user.email "${{ secrets.EMAIL }}"
+          git config --local user.name "shimajima-eiji"
+      - name: Commit files
+        run: |
+          git commit -m "Add dummy" -a
+          git pull
+          git push
