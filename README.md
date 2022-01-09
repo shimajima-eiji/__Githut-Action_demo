@@ -1,1 +1,2 @@
 # __Githut-Action_demo
+mainブランチにコミットされるたびに、dummyファイルにコミットした時間を書き込むデモ
