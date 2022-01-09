@@ -1,20 +1,24 @@
 ## __Githut-Action_demo
 mainブランチにコミットされるたびに、dummyファイルにコミットした時間を書き込むデモ
 
-### 解説
+## 解説
 https://github.com/shimajima-eiji/__Githut-Action_demo/blob/main/.github/workflows/add_dummy.yml
 
+### git cloneの仕方
 必要なのは、steps以下の`uses: actions/checkout@v2`で`git clone`していること。  
 これを認識していないとgitコマンドをうまくつかえなくてハマってしまう。
 
 ### `run |`の意味
 以下に書くコマンドは１行で１つを意味する。非常に楽。
 
-### （任意）変数を非公開にしたい
+### （補足）変数を非公開にしたい
 https://github.com/(USER)/(REPOSITORY)/settings/secrets/actions で追加する。  
 ここでは、`USER`と`EMAIL`に何らかの値を入れていることが分かる。
 
-### やらかし例
+### dateコマンドのタイムゾーン
+Github Actionsで`date`コマンドを実行すると、タイムゾーンがUTCになっているため、JSTに変換したい場合は一手間必要。
+
+## やらかし例
 ```
 steps:
   name: 
