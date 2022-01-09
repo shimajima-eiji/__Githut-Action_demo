@@ -10,7 +10,7 @@ jobs:
       - name: git setting
         run: |
           git config --global user.email "${{ secrets.EMAIL }}"
-          git config --global user.name "shimajima-eiji"
+          git config --global user.name "${{ secrets.USER }}"
       - name: Commit files
         run: |
           TZ=-9 date '+%Y/%m/%d (JST)' >dummy
