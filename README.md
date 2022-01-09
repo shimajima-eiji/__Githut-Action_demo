@@ -7,6 +7,9 @@ https://github.com/shimajima-eiji/__Githut-Action_demo/blob/main/.github/workflo
 必要なのは、steps以下の`uses: actions/checkout@v2`で`git clone`していること。  
 これを認識していないとgitコマンドをうまくつかえなくてハマってしまう。
 
+### `run |`の意味
+以下に書くコマンドは１行で１つを意味する。非常に楽。
+
 ### （任意）変数を非公開にしたい
 https://github.com/(USER)/(REPOSITORY)/settings/secrets/actions で追加する。  
 ここでは、EMAILという名前で何らかの値を入れていることが分かる。
