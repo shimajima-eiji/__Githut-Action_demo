@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: clone this
         run: git clone https://github.com/shimajima-eiji/__Githut-Action_demo.git
+      - name: cd
+        run: cd __Github-Action_demo
       - name: debug
         run: echo "test" >dummy
       - name: git setting
