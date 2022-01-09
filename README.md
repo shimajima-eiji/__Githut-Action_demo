@@ -1,5 +1,6 @@
 ## __Githut-Action_demo
-mainブランチにコミットされるたびに、dummyファイルにコミットした時間を書き込むデモ
+mainブランチにコミットされるたびに、dummyファイルにコミットした時間を書き込むデモ。  
+forkして変数を設定すればすぐ使えるようにしている。
 
 ## 解説
 https://github.com/shimajima-eiji/__Githut-Action_demo/blob/main/.github/workflows/add_dummy.yml
